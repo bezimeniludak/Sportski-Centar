@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt · SC Voždovac</title>
+  <script src="https://kit.fontawesome.com/0297c3bb69.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="nav on-light">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SC</span>
+        <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Početna</a>
+        <a href="objekti.html">Objekti</a>
+        <a href="raspored.html">Raspored</a>
+        <a href="cene.html">Cene</a>
+        <a href="o-nama.html">O nama</a>
+        <a class="active" href="kontakt.html">Kontakt</a>
+      </nav>
+      <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
+      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Prijem</p>
+      <h1 class="display">Kontakt</h1>
+      <p>Rezervacije sala, informacije o bazenima i prijava škola sporta.</p>
+    </div>
+  </header>
+
+  <section class="page" style="padding-top:8px;">
+    <div class="container contact-grid">
+      <div class="contact-card reveal">
+        <div class="contact-item">
+          <small>Adresa</small>
+          <strong>Crnotravska 4, 11042 Beograd</strong>
+          Banjica · Voždovac
+        </div>
+        <div class="contact-item">
+          <small>Hala</small>
+          <strong>011 2667 780</strong>
+        </div>
+        <div class="contact-item">
+          <small>Bazeni</small>
+          <strong>011 4395 368</strong>
+        </div>
+        <div class="contact-item">
+          <small>Prijem</small>
+          <strong>011 2660 826 · 011 2660 640</strong>
+        </div>
+        <div class="contact-item">
+          <small>Email</small>
+          <strong>office@scvozdovac.rs</strong>
+        </div>
+        <div class="contact-item">
+          <small>Prevoz</small>
+          Linije 40, 47, 48, 49, 50, 78, 80 · stajalište Paunova / Plivalište Banjica
+        </div>
+        <div class="map-embed">
+          <iframe title="Mapa SC Voždovac" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Crnotravska%204%20Beograd%20Banjica&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+
+      <form class="form reveal" action="#" method="post">
+        <h2 class="display" style="font-size:32px;">Iznajmite termin</h2>
+        <p style="color:var(--muted);margin-top:-4px;">Poruka ide na prijem. Ovo je demo forma — ne šalje serveru.</p>
+        <label for="ime">Ime i prezime</label>
+        <input id="ime" name="ime" required placeholder="Ana Petrović" />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="ana@email.com" />
+        <label for="tel">Telefon</label>
+        <input id="tel" name="tel" type="tel" placeholder="06x · · ·" />
+        <label for="obj">Objekat</label>
+        <select id="obj" name="obj">
+          <option>Velika sala</option>
+          <option>Mala sala</option>
+          <option>Trim sala</option>
+          <option>Stoni tenis</option>
+          <option>Teniski teren</option>
+          <option>Bazen — informacije</option>
+        </select>
+        <label for="poruka">Poruka</label>
+        <textarea id="poruka" name="poruka" rows="5" placeholder="Datum, satnica, broj učesnika…"></textarea>
+        <button class="btn" type="submit">Pošaljite zahtev</button>
+        <div class="form-ok">Zahtev je zabeležen. Javićemo se čim proverimo slobodan termin.</div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:16px;">
+          <span class="logo-mark">SC</span>
+          <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+        </a>
+        <p>Crnotravska 4, 11042 Beograd</p>
+      </div>
+      <div>
+        <h4>Centar</h4>
+        <ul>
+          <li><a href="objekti.html">Objekti</a></li>
+          <li><a href="raspored.html">Raspored</a></li>
+          <li><a href="cene.html">Cene</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Telefoni</h4>
+        <ul>
+          <li>Hala 011 2667 780</li>
+          <li>Bazeni 011 4395 368</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rad</h4>
+        <ul>
+          <li>Hala 07–24h svaki dan</li>
+          <li>Otvoreni bazeni 10–19h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SC Voždovac</span>
+      <span>Crnotravska 4 · Banjica</span>
+    </div>
+  </footer>
+  <script src="js/raspored-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Objekti · SC Voždovac</title>
+  <script src="https://kit.fontawesome.com/0297c3bb69.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="nav on-light">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SC</span>
+        <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Početna</a>
+        <a class="active" href="objekti.html">Objekti</a>
+        <a href="raspored.html">Raspored</a>
+        <a href="cene.html">Cene</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
+      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Kompleks</p>
+      <h1 class="display">Objekti</h1>
+      <p>Bazeni, hala, sale i teniski kompleksi na jednoj adresi — Crnotravska 4.</p>
+    </div>
+  </header>
+
+  <section class="page" style="padding-top:12px;">
+    <div class="container facility-list">
+      <article class="facility reveal" id="bazeni">
+        <div class="facility-media">
+          <img src="images/otvoreni-1.jpg" alt="Otvoreni bazeni Banjica u zoru" />
+        </div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--plivanje)">Voda</p>
+          <h3>Otvoreni bazeni</h3>
+          <p>Dva olimpijska otvorena bazena sa tribinama, ležaljkama i ambulantom. Letnja sezona radi svakog dana od 10
+            do 19 časova. Noćno kupanje se najavljuje posebno.</p>
+          <p>Na platou su šest spasilaca u smeni i dežurni lekar. Temperatura vode na otvaranju sezone obično je oko 25
+            °C.</p>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--plivanje)">Olimpijski</span>
+            <span class="dot-pill" style="--c:var(--plivanje)">Tribine</span>
+            <span class="dot-pill" style="--c:var(--sauna)">Ambulanta</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="facility reverse reveal">
+        <div class="facility-media">
+          <img src="images/zatvoreni-radovi.jpg" alt="Zatvoreni olimpijski bazen tokom radova" />
+        </div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--vaterpolo)">Voda</p>
+          <h3>Zatvoreni bazeni</h3>
+          <p>Veliki zatvoreni olimpijski bazen (do 2.000 sedišta i 1.000 stajaćih) i manji bazen za neplivače. Pogodni
+            za plivanje, vaterpolo i sinhrono plivanje.</p>
+          <p>Termini za građanstvo: radnim danima 06–09 i 13–16, vikendom 13–16. Tokom održavanja plafona i oplate
+            raspored se usklađuje nedeljno.</p>
+          <div class="note">Fotografija prikazuje fazu radova na zatvorenom bazenu. Proverite aktuelni status pre
+            dolaska.</div>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--vaterpolo)">Vaterpolo</span>
+            <span class="dot-pill" style="--c:var(--skola)">Škola plivanja</span>
+            <span class="dot-pill" style="--c:var(--plivanje)">Rekreativci</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="facility reveal" id="hala">
+        <div class="facility-media">
+          <img src="images/hala.webp" alt="Parket velike hale sa tribinama" />
+        </div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--rukomet)">Parket</p>
+          <h3>Velika hala</h3>
+          <p>Univerzalna dvorana kapaciteta 2.300 mesta. Rukomet, košarka, odbojka i futsal — od pionira do seniorskih
+            mečeva. Domaći teren više beogradskih klubova.</p>
+          <p>Hala radi svakog dana od 07 do 24 časa. Termini se iznajmljuju preko prijema.</p>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--rukomet)">Rukomet</span>
+            <span class="dot-pill" style="--c:var(--kosarka)">Košarka</span>
+            <span class="dot-pill" style="--c:var(--odbojka)">Odbojka</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="facility reverse reveal" id="sale">
+        <div class="facility-media ph">Mala + trim sala</div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--borilacki)">Sale</p>
+          <h3>Mala i trim sala</h3>
+          <p>Mala sala prima futsal, borilačke klubove i večernje rekreativce. Trim sala ima tatami podlogu — džudo,
+            karate, tekvondo, korektivna gimnastika za decu 3–7 godina.</p>
+          <p>Posebno se iznajmljuje salon stonog tenisa, uključujući para program.</p>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--futsal)">Futsal</span>
+            <span class="dot-pill" style="--c:var(--borilacki)">Borilački</span>
+            <span class="dot-pill" style="--c:var(--stoni)">Stoni tenis</span>
+            <span class="dot-pill" style="--c:var(--trim)">Trim</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="facility reveal" id="tenis">
+        <div class="facility-media ph">Teniski kompleksi 1–6</div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--tenis)">Otvoreno</p>
+          <h3>Tenis</h3>
+          <p>Šest otvorenih terena uz šumu Banjice. Škola tenisa utorkom i četvrtkom, slobodni tereni tokom dana,
+            porodični termini vikendom.</p>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--tenis)">6 terena</span>
+            <span class="dot-pill" style="--c:var(--skola)">Škola</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="facility reverse reveal" id="fitness">
+        <div class="facility-media">
+          <img src="images/otvoreni-3.jpg" alt="Platô bazena u kasno popodne" />
+        </div>
+        <div class="facility-copy">
+          <p class="eyebrow" style="color:var(--teretana)">Kondicija</p>
+          <h3>Teretana i wellness</h3>
+          <p>Fitness sala je otvorena radnim danima 07–22, vikendom kraće. Jutarnji trim, korektivni programi i sauna u
+            odabranim terminima.</p>
+          <div class="dots">
+            <span class="dot-pill" style="--c:var(--teretana)">Teretana</span>
+            <span class="dot-pill" style="--c:var(--sauna)">Sauna</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Galerija</p>
+          <h2 class="display">Banjica u kadru</h2>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <figure data-lightbox="images/hero-leto.jpg"><img src="images/hero-leto.jpg"
+            alt="Letnji dan na otvorenim bazenima" /></figure>
+        <figure data-lightbox="images/otvoreni-2.jpg"><img src="images/otvoreni-2.jpg"
+            alt="Olimpijski bazen i zgrada centra" /></figure>
+        <figure data-lightbox="images/otvoreni-4.jpg"><img src="images/otvoreni-4.jpg"
+            alt="Ležaljke i plavi dezeni platôa" /></figure>
+        <figure data-lightbox="images/staze.jpg"><img src="images/staze.jpg" alt="Staze zatvorenog bazena" /></figure>
+        <figure data-lightbox="images/otvoreni-5.jpg"><img src="images/otvoreni-5.jpg" alt="Tribine otvorenog bazena" />
+        </figure>
+        <figure class="ph" style="min-height:280px;">Teniski tereni</figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:16px;">
+          <span class="logo-mark">SC</span>
+          <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+        </a>
+        <p>Crnotravska 4, 11042 Beograd</p>
+      </div>
+      <div>
+        <h4>Centar</h4>
+        <ul>
+          <li><a href="raspored.html">Raspored</a></li>
+          <li><a href="cene.html">Cenovnik</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Telefoni</h4>
+        <ul>
+          <li>Hala 011 2667 780</li>
+          <li>Bazeni 011 4395 368</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rad</h4>
+        <ul>
+          <li>Hala 07–24h</li>
+          <li>Otvoreni bazeni 10–19h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SC Voždovac</span>
+      <span>Crnotravska 4 · Banjica</span>
+    </div>
+  </footer>
+
+  <div class="lightbox"><button type="button">×</button><img alt="" /></div>
+  <script src="js/raspored-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

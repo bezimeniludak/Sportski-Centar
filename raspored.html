@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raspored · SC Voždovac</title>
+  <script src="https://kit.fontawesome.com/0297c3bb69.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="nav on-light">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SC</span>
+        <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Početna</a>
+        <a href="objekti.html">Objekti</a>
+        <a class="active" href="raspored.html">Raspored</a>
+        <a href="cene.html">Cene</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
+      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Kalendar</p>
+      <h1 class="display">Raspored</h1>
+      <p>Javni termini za građanstvo i reprezentativni klupski program tokom nedelje. Klubovi rezervišu dodatne slotove
+        preko prijema.</p>
+    </div>
+  </header>
+
+  <section class="page" style="padding-top:8px;">
+    <div class="container" id="week-schedule">
+      <div class="filter-bar" id="sport-filters" aria-label="Filter sportova"></div>
+      <div class="week-tabs" role="tablist"></div>
+      <div class="week-panels"></div>
+      <p class="note">Zatvoreni bazen: pon–pet 06–09 i 13–16, sub–ned 13–16. Otvoreni bazeni u sezoni: 10–19 svakog
+        dana.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <h2 class="display" style="font-size:36px;margin-bottom:18px;">Radno vreme objekata</h2>
+      <table class="hours-table">
+        <thead>
+          <tr>
+            <th>Objekat</th>
+            <th>Radni dani</th>
+            <th>Vikend</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sportska hala</td>
+            <td>07:00–24:00</td>
+            <td>07:00–24:00</td>
+          </tr>
+          <tr>
+            <td>Otvoreni bazeni</td>
+            <td>10:00–19:00</td>
+            <td>10:00–19:00</td>
+          </tr>
+          <tr>
+            <td>Zatvoreni bazen · građanstvo</td>
+            <td>06–09 / 13–16</td>
+            <td>13:00–16:00</td>
+          </tr>
+          <tr>
+            <td>Teretana</td>
+            <td>07:00–22:00</td>
+            <td>08:00–21:00</td>
+          </tr>
+          <tr>
+            <td>Teniski tereni</td>
+            <td>po rezervaciji</td>
+            <td>po rezervaciji</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html" style="margin-bottom:16px;">
+          <span class="logo-mark">SC</span>
+          <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
+        </a>
+        <p>Crnotravska 4, 11042 Beograd</p>
+      </div>
+      <div>
+        <h4>Centar</h4>
+        <ul>
+          <li><a href="objekti.html">Objekti</a></li>
+          <li><a href="cene.html">Cenovnik</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Telefoni</h4>
+        <ul>
+          <li>Hala 011 2667 780</li>
+          <li>Bazeni 011 4395 368</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Email</h4>
+        <p>office@scvozdovac.rs</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 SC Voždovac</span>
+      <span>Raspored je orijentacioni</span>
+    </div>
+  </footer>
+  <script src="js/raspored-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
