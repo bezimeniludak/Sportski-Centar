@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <a href="kontakt.html">Kontakt</a>
       </nav>
       <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
-      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" aria-label="Meni" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -46,7 +47,7 @@
     <div class="container about-grid">
       <div class="about-copy reveal">
         <p>Centar je podignut 1974. na Banjici, na 4,7 hektara između šume i solitera. Od prvog dana deli istu adresu sa
-          plivalištem — Crnotravska 4 — i istu namenu: takmičenje i rekreacija.</p>
+          plivalištem — <a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4</a> — i istu namenu: takmičenje i rekreacija.</p>
         <p>Velika hala prima 2.300 gledalaca. Zatvoreni olimpijski bazen ima 2.000 sedišta i još 1.000 stajaćih mesta.
           Uz njih stoje mali zatvoreni bazen, dva otvorena olimpijska bazena, mala i trim sala, salon stonog tenisa,
           teretana i šest teniskih terena.</p>
@@ -55,16 +56,10 @@
         <p>Leti platô postaje gradsko kupalište. Zimi se ritam prebacuje na zatvorene termine, škole sporta i večernje
           rezervacije sala.</p>
       </div>
-      <div>
-        <figure class="media-card reveal" style="min-height:360px;" data-lightbox="images/otvoreni-2.jpg">
-          <img src="images/otvoreni-2.jpg" alt="Zgrada SC Voždovac iznad otvorenih bazena" />
-          <figcaption>Paviljon i otvoreni bazeni</figcaption>
-        </figure>
-        <div class="stats" style="margin-top:16px;">
-          <div class="stat"><b>GO Voždovac</b><span>osnivač</span></div>
-          <div class="stat"><b>Grad BG</b><span>vlasnik</span></div>
-        </div>
-      </div>
+      <figure class="media-card reveal" data-lightbox="images/vaterpolo-1.webp">
+        <img src="images/vaterpolo-1.webp" alt="Vaterpolo na zatvorenom bazenu" />
+        <figcaption>Vaterpolo na zatvorenom bazenu</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -77,47 +72,30 @@
         </div>
       </div>
       <div class="sports-grid">
-        <div class="sport-card reveal" style="--c:var(--rukomet)"><a href="https://rkpartizan.rs/">
-            <h3>RK Partizan</h3>
-          </a>
-          <p>Seniori i mlađe kategorije u velikoj sali.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--rukomet)"><a href="https://zrkcrvenazvezda.rs/">
-            <h3>ŽRK Crvena Zvezda</h3>
-          </a>
-          <p>Ženski rukomet, večernji termini.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--odbojka)"><a href="https://www.instagram.com/orkbeograd_/">
-            <h3>ORK Beograd</h3>
-          </a>
-          <p>Odbojkaški klub na parketu hale.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--rukomet)"><a href="http://rkobilic.fon.rs/">
-            <h3>RK Obilić</h3>
-          </a>
-          <p>Domaći mečevi i pripreme.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--futsal)"><a href="https://www.instagram.com/banjicakmf/">
-            <h3>KMF Banjica</h3>
-          </a>
-          <p>Futsal u maloj sali.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--vaterpolo)"><a href="https://waterpolopartizan.rs/">
-            <h3>VK Partizan</h3>
-          </a>
-          <p>Uzrasne selekcije na zatvorenom bazenu.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--borilacki)"><a href="https://bjjvin.rs/">
-            <h3>BJJ Vin</h3>
-          </a>
-          <p>Brazilian jiu-jitsu za sve uzraste.</p>
-        </div>
-        <div class="sport-card reveal" style="--c:var(--skola)"><a
-            href="https://www.decijigrad.rs/skola/sport-kids-vozdovac/">
-            <h3>Škola sporta "Sport Kids"</h3>
-          </a>
-          <p>Raznovrsan sportski program za najmlađe.</p>
-        </div>
+        <a class="club-card reveal" href="https://rkpartizan.rs/" aria-label="RK Partizan">
+          <img class="club-bg" src="images/clubs/rk-partizan.png" alt="RK Partizan" />
+        </a>
+        <a class="club-card reveal" href="https://zrkcrvenazvezda.rs/" aria-label="ŽRK Crvena Zvezda">
+          <img class="club-bg" src="images/clubs/zrk-zvezda.png" alt="ŽRK Crvena Zvezda" />
+        </a>
+        <a class="club-card reveal" href="https://www.instagram.com/orkbeograd_/" aria-label="ORK Beograd">
+          <img class="club-bg" src="images/clubs/ork-beograd.png" alt="ORK Beograd" />
+        </a>
+        <a class="club-card reveal" href="http://rkobilic.fon.rs/" aria-label="RK Obilić">
+          <img class="club-bg" src="images/clubs/rk-obilic.png" alt="RK Obilić" />
+        </a>
+        <a class="club-card reveal" href="https://www.instagram.com/banjicakmf/" aria-label="KMF Banjica">
+          <img class="club-bg" src="images/clubs/kmf-banjica.png" alt="KMF Banjica" />
+        </a>
+        <a class="club-card reveal" href="https://waterpolopartizan.rs/" aria-label="VK Partizan">
+          <img class="club-bg" src="images/clubs/vk-partizan.png" alt="VK Partizan" />
+        </a>
+        <a class="club-card reveal" href="https://bjjvin.rs/" aria-label="BJJ Vin">
+          <img class="club-bg" src="images/clubs/bjj-vin.png" alt="BJJ Vin" />
+        </a>
+        <a class="club-card reveal" href="https://www.decijigrad.rs/skola/sport-kids-vozdovac/" aria-label="Škola sporta Sport Kids">
+          <img class="club-bg" src="images/clubs/sport-kids.png" alt="Škola sporta Sport Kids" />
+        </a>
       </div>
     </div>
   </section>
@@ -129,7 +107,7 @@
           <span class="logo-mark">SC</span>
           <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
         </a>
-        <p>Crnotravska 4, 11042 Beograd</p>
+        <p><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, 11042 Beograd</a></p>
       </div>
       <div>
         <h4>Centar</h4>

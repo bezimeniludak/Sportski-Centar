@@ -14,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 </head>
 
 <body>
@@ -39,71 +40,95 @@
   </header>
 
   <section class="hero">
-    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-slides" aria-hidden="true">
+      <div class="hero-slide is-active" data-caption="Otvoreni bazeni" style="background-image:url('images/leto-2.webp')"></div>
+      <div class="hero-slide from-left" data-caption="Zatvoreni bazen" style="background-image:url('images/unutrasnji.jpg')"></div>
+      <div class="hero-slide" data-caption="Vaterpolo" style="background-image:url('images/vaterpolo-2.jpg')"></div>
+      <div class="hero-slide from-left" data-caption="Odbojka" style="background-image:url('images/odbojka.jpg')"></div>
+      <div class="hero-slide" data-caption="Teretana" style="background-image:url('images/teretana-1.jpg')"></div>
+      <div class="hero-slide from-left" data-caption="Stoni tenis" style="background-image:url('images/stoni-tenis.webp')"></div>
+      <div class="hero-slide" data-caption="Wellness" style="background-image:url('images/welness-1.jpg')"></div>
+      <div class="hero-slide from-left" data-caption="Borilački sportovi" style="background-image:url('images/bjj.jpg')"></div>
+    </div>
     <div class="hero-dim"></div>
     <div class="hero-grid"></div>
     <div class="hero-orb" aria-hidden="true"></div>
-    <div class="hero-float">
-      <small>Letnja sezona</small>
-      <strong>Otvoreni bazeni<br>10–19h</strong>
-      <p style="opacity:.75;margin-top:8px;font-size:14px;">Kartica Grada Beograda važi od 12h.</p>
-    </div>
     <div class="hero-content">
-      <p class="eyebrow" style="color:#9ff6f8;">Sportski centar · 1974</p>
-      <h1 class="display">Sportski<br>Centar<br><em>Banjica</em></h1>
-      <p class="hero-lead">Četiri olimpijska bazena, hala od 2.300 mesta i šest teniskih terena — takmičenje i
-        rekreacija na istom platou.</p>
-      <div class="hero-actions">
-        <a class="btn btn-cyan" href="raspored.html">Današnji termini</a>
-        <a class="btn btn-ghost" href="objekti.html">Pogledajte objekte</a>
+      <div class="hero-copy">
+        <p class="eyebrow" style="color:#9ff6f8;">Est. 1974</p>
+        <h1 class="display"><span>Sportski</span><span>Centar</span><span><em>Banjica</em></span></h1>
       </div>
-      <div class="hero-chips">
-        <span class="chip" id="chip-plivanje">Plivanje</span>
-        <span class="chip" id="chip-vaterpolo">Vaterpolo</span>
-        <span class="chip" id="chip-rukomet">Rukomet</span>
-        <span class="chip" id="chip-kosarka">Košarka</span>
-        <span class="chip" id="chip-odbojka">Odbojka</span>
-        <span class="chip" id="chip-tenis">Tenis</span>
-        <span class="chip" id="chip-futsal">Futsal</span>
-        <span class="chip" id="chip-teretana">Stoni Tenis</span>
-        <span class="chip" id="chip-borilacki">Borilacki</span>
-        <span class="chip" id="chip-trim">Trim</span>
-        <span class="chip" id="chip-skola">Skola Sporta</span>
-        <span class="chip" id="chip-welness">Welness</span>
-      </div>
-      <div class="hero-meta">
-        <div class="hero-stat"><strong>4</strong><span>olimpijska bazena</span></div>
-        <div class="hero-stat"><strong>2.3k</strong><span>mesta u hali</span></div>
-        <div class="hero-stat"><strong>6</strong><span>teniskih terena</span></div>
+      <p class="hero-lead">Otvoreni bazeni rade 10–19h, kartica grada od 12h. Isti plato deli klubove i građanstvo, od jutarnjeg plivanja do večernjih mečeva u hali.</p>
+      <div class="hero-foot">
+        <div class="hero-meta">
+          <div class="hero-stat"><strong>4</strong><span>olimpijska bazena</span></div>
+          <div class="hero-stat"><strong>2.3k</strong><span>mesta u hali</span></div>
+          <div class="hero-stat"><strong>6</strong><span>teniskih terena</span></div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-cyan" href="raspored.html">Današnji termini</a>
+          <a class="btn btn-ghost" href="objekti.html">Pogledajte objekte</a>
+        </div>
       </div>
     </div>
+    <button class="hero-arrow hero-arrow-prev" type="button" aria-label="Prethodna fotografija">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="hero-arrow hero-arrow-next" type="button" aria-label="Sledeća fotografija">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="hero-ui">
+      <p class="hero-caption">Otvoreni bazeni</p>
+      <div class="hero-dots" role="tablist" aria-label="Fotografije centra">
+        <button class="hero-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Otvoreni bazeni"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Zatvoreni bazen"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Vaterpolo"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Odbojka"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Teretana"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Stoni tenis"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Wellness"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Borilački sportovi"></button>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#aktuelno" aria-label="Skrolujte nadole">
+      <span></span>
+    </a>
   </section>
 
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>
         Plivanje <i class="fa-solid fa-circle" style="color:var(--plivanje)"></i>
         Vaterpolo <i class="fa-solid fa-circle" style="color:var(--vaterpolo)"></i>
+        Škola sporta <i class="fa-solid fa-circle" style="color:var(--skola)"></i>
+        Borilački <i class="fa-solid fa-circle" style="color:var(--borilacki)"></i>
+        Teretana <i class="fa-solid fa-circle" style="color:var(--teretana)"></i>
+        Stoni tenis <i class="fa-solid fa-circle" style="color:var(--stoni)"></i>
         Rukomet <i class="fa-solid fa-circle" style="color:var(--rukomet)"></i>
         Košarka <i class="fa-solid fa-circle" style="color:var(--kosarka)"></i>
         Odbojka <i class="fa-solid fa-circle" style="color:var(--odbojka)"></i>
         Tenis <i class="fa-solid fa-circle" style="color:var(--tenis)"></i>
         Futsal <i class="fa-solid fa-circle" style="color:var(--futsal)"></i>
-        Teretana <i class="fa-solid fa-circle" style="color:var(--teretana)"></i></span>
+        Wellness <i class="fa-solid fa-circle" style="color:var(--sauna)"></i>
+      </span>
       <span>
         Plivanje <i class="fa-solid fa-circle" style="color:var(--plivanje)"></i>
         Vaterpolo <i class="fa-solid fa-circle" style="color:var(--vaterpolo)"></i>
+        Škola sporta <i class="fa-solid fa-circle" style="color:var(--skola)"></i>
+        Borilački <i class="fa-solid fa-circle" style="color:var(--borilacki)"></i>
+        Teretana <i class="fa-solid fa-circle" style="color:var(--teretana)"></i>
+        Stoni tenis <i class="fa-solid fa-circle" style="color:var(--stoni)"></i>
         Rukomet <i class="fa-solid fa-circle" style="color:var(--rukomet)"></i>
         Košarka <i class="fa-solid fa-circle" style="color:var(--kosarka)"></i>
         Odbojka <i class="fa-solid fa-circle" style="color:var(--odbojka)"></i>
         Tenis <i class="fa-solid fa-circle" style="color:var(--tenis)"></i>
         Futsal <i class="fa-solid fa-circle" style="color:var(--futsal)"></i>
-        Teretana <i class="fa-solid fa-circle" style="color:var(--teretana)"></i>
+        Wellness <i class="fa-solid fa-circle" style="color:var(--sauna)"></i>
       </span>
     </div>
   </div>
 
-  <section>
+  <section class="after-hero" id="aktuelno">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -124,7 +149,7 @@
         </article>
         <article class="news-card reveal">
           <time>Objekat</time>
-          <h3>Zatvoreni bazen - održavanje</h3>
+          <h3>Zatvoreni bazen — održavanje</h3>
           <p>Radovi na plafonu i oplatama. Termini za građanstvo se objavljuju nedeljno.</p>
         </article>
       </div>
@@ -165,14 +190,42 @@
           </div>
         </a>
         <a class="sport-card reveal" href="objekti.html#bazeni" style="--c:var(--vaterpolo)">
-          <div class="sport-ico"><i class="fa-solid fa-volleyball"></i></div>
+          <div class="sport-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6.1" r="3.15" fill="currentColor"/><path fill="currentColor" d="M2.2 13.6c1.7-1.35 3.3-1.35 5 0s3.3 1.35 5 0 3.3-1.35 5 0 2.4 1 3.6 1v2c-1.4-.4-2.5-1.1-3.6-1.1-1.7 0-3.3.85-5 0s-3.3-.85-5 0-3.3.85-5 0c-.9-.45-1.8-.8-2.6-.8v-2c1.1.1 1.9.4 2.6.9zm0 5.1c1.7-1.35 3.3-1.35 5 0s3.3 1.35 5 0 3.3-1.35 5 0 2.4 1 3.6 1v1.5H2.2V18.7z"/></svg></div>
           <div>
             <h3>Vaterpolo</h3>
             <p>Pripreme i mečevi na bazenima koji ispunjavaju međunarodne uslove.</p>
           </div>
         </a>
+        <a class="sport-card reveal" href="objekti.html#sale" style="--c:var(--skola)">
+          <div class="sport-ico"><i class="fa-solid fa-child"></i></div>
+          <div>
+            <h3>Škola sporta</h3>
+            <p>Plivanje, korektivna gimnastika i subotnji program za decu.</p>
+          </div>
+        </a>
+        <a class="sport-card reveal" href="objekti.html#sale" style="--c:var(--borilacki)">
+          <div class="sport-ico"><i class="fa-solid fa-hand-fist"></i></div>
+          <div>
+            <h3>Borilački</h3>
+            <p>Džudo, karate, tekvondo i mačevanje u trim i maloj sali.</p>
+          </div>
+        </a>
+        <a class="sport-card reveal" href="objekti.html#fitness" style="--c:var(--teretana)">
+          <div class="sport-ico"><i class="fa-solid fa-dumbbell"></i></div>
+          <div>
+            <h3>Teretana</h3>
+            <p>Fitness sala radnim danima 07–22, vikendom kraće.</p>
+          </div>
+        </a>
+        <a class="sport-card reveal" href="objekti.html#sale" style="--c:var(--stoni)">
+          <div class="sport-ico"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+          <div>
+            <h3>Stoni tenis</h3>
+            <p>Salon sa više stolova, rekreativci i para program.</p>
+          </div>
+        </a>
         <a class="sport-card reveal" href="objekti.html#hala" style="--c:var(--rukomet)">
-          <div class="sport-ico"><i class="fa-solid fa-futbol"></i></div>
+          <div class="sport-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="4.6" r="2" fill="currentColor"/><path d="M6.4 7.6h2.4l1.1 4.6" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M7.2 12.2 5.1 19.4M9.6 12.4 12.2 19.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M8.6 9.2 14.2 7.2" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><circle cx="17.3" cy="5.6" r="2.55" fill="currentColor"/></svg></div>
           <div>
             <h3>Rukomet</h3>
             <p>Domaći teren Partizana, Zvezde, Obilića i SC Voždovca.</p>
@@ -193,7 +246,7 @@
           </div>
         </a>
         <a class="sport-card reveal" href="objekti.html#tenis" style="--c:var(--tenis)">
-          <div class="sport-ico"><i class="fa-solid fa-baseball"></i></div>
+          <div class="sport-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M9.2 2.2a4.7 4.7 0 1 0 .1 9.4 4.7 4.7 0 0 0-.1-9.4zm0 2a2.7 2.7 0 1 1 0 5.4 2.7 2.7 0 0 1 0-5.4z"/><path fill="currentColor" d="M11.5 11.2c.5.4.7 1.1.5 1.7l-3.2 7.2a1.35 1.35 0 0 1-2.5-1.1l3.2-7.2c.3-.6 1-.9 1.6-.6z"/><circle cx="17.8" cy="6.2" r="2" fill="currentColor"/></svg></div>
           <div>
             <h3>Tenis</h3>
             <p>Šest otvorenih terena i škola tenisa tokom cele sezone.</p>
@@ -206,11 +259,11 @@
             <p>Mala sala i večernji slotovi za klubove i ekipe iz kraja.</p>
           </div>
         </a>
-        <a class="sport-card reveal" href="objekti.html#sale" style="--c:var(--borilacki)">
-          <div class="sport-ico"><i class="fa-solid fa-hand-fist"></i></div>
+        <a class="sport-card reveal" href="objekti.html#fitness" style="--c:var(--sauna)">
+          <div class="sport-ico"><i class="fa-solid fa-spa"></i></div>
           <div>
-            <h3>Borilački</h3>
-            <p>Džudo, karate, tekvondo i mačevanje u trim i maloj sali.</p>
+            <h3>Wellness</h3>
+            <p>Sauna i opuštanje u odabranim terminima.</p>
           </div>
         </a>
       </div>
@@ -222,18 +275,22 @@
       <div class="section-head reveal">
         <div>
           <p class="eyebrow">Kompleks</p>
-          <h2 class="display">Park, tribine, voda</h2>
+          <h2 class="display">Voda, hala, sala</h2>
         </div>
         <a class="btn btn-ghost" href="objekti.html">Više fotografija</a>
       </div>
-      <div class="media-split reveal">
-        <figure class="media-card" data-lightbox="images/otvoreni-5.jpg">
-          <img src="images/otvoreni-5.jpg" alt="Otvoreni olimpijski bazen na Banjici sa tribinama" />
-          <figcaption>Otvoreni olimpijski bazen</figcaption>
+      <div class="media-split trio reveal">
+        <figure class="media-card" data-lightbox="images/unutrasnji.jpg">
+          <img src="images/unutrasnji.jpg" alt="Zatvoreni olimpijski bazen u upotrebi" />
+          <figcaption>Zatvoreni olimpijski bazen</figcaption>
         </figure>
         <figure class="media-card" data-lightbox="images/hala.webp">
           <img src="images/hala.webp" alt="Velika sportska hala SC Voždovac" />
           <figcaption>Velika hala · 2.300 mesta</figcaption>
+        </figure>
+        <figure class="media-card" data-lightbox="images/welness-2.jpg">
+          <img src="images/welness-2.jpg" alt="Wellness zona sa bazenom i hidromasažnom kadom" />
+          <figcaption>Wellness</figcaption>
         </figure>
       </div>
     </div>
@@ -271,7 +328,7 @@
           <span class="logo-mark">SC</span>
           <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
         </a>
-        <p>Crnotravska 4, 11042 Beograd<br>office@scvozdovac.rs</p>
+        <p><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, 11042 Beograd</a><br>office@scvozdovac.rs</p>
       </div>
       <div>
         <h4>Centar</h4>
@@ -301,7 +358,7 @@
     </div>
     <div class="container footer-bottom">
       <span>© 2026 SC Voždovac</span>
-      <span>Crnotravska 4 · Banjica</span>
+      <span><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4 · Banjica</a></span>
     </div>
   </footer>
 

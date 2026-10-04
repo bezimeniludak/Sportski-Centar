@@ -45,9 +45,9 @@ SCB.EVENTS = [
 
   { day: 2, start: "06:00", end: "09:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 2, start: "07:00", end: "22:00", title: "Otvorena teretana", loc: "Fitness sala", sport: "teretana" },
-  { day: 2, start: "09:00", end: "10:30", title: "Korektivna gimnastika 3–7", loc: "Trim sala", sport: "trim" },
+  { day: 2, start: "09:00", end: "10:30", title: "Korektivna gimnastika 3-7", loc: "Trim sala", sport: "trim" },
   { day: 2, start: "10:00", end: "19:00", title: "Otvoreni bazeni (sezona)", loc: "Spoljni olimpijski bazeni", sport: "plivanje" },
-  { day: 2, start: "10:00", end: "12:00", title: "Tenis škola", loc: "Tereni 3–4", sport: "tenis" },
+  { day: 2, start: "10:00", end: "12:00", title: "Tenis škola", loc: "Tereni 3-4", sport: "tenis" },
   { day: 2, start: "13:00", end: "16:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 2, start: "16:30", end: "18:00", title: "Džudo · deca", loc: "Mala sala", sport: "borilacki" },
   { day: 2, start: "17:00", end: "18:30", title: "Košarka — mini", loc: "Velika sala", sport: "kosarka" },
@@ -72,9 +72,9 @@ SCB.EVENTS = [
 
   { day: 4, start: "06:00", end: "09:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 4, start: "07:00", end: "22:00", title: "Otvorena teretana", loc: "Fitness sala", sport: "teretana" },
-  { day: 4, start: "09:00", end: "10:30", title: "Korektivna gimnastika 3–7", loc: "Trim sala", sport: "trim" },
+  { day: 4, start: "09:00", end: "10:30", title: "Korektivna gimnastika 3-7", loc: "Trim sala", sport: "trim" },
   { day: 4, start: "10:00", end: "19:00", title: "Otvoreni bazeni (sezona)", loc: "Spoljni olimpijski bazeni", sport: "plivanje" },
-  { day: 4, start: "10:00", end: "12:00", title: "Tenis škola", loc: "Tereni 3–4", sport: "tenis" },
+  { day: 4, start: "10:00", end: "12:00", title: "Tenis škola", loc: "Tereni 3-4", sport: "tenis" },
   { day: 4, start: "13:00", end: "16:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 4, start: "16:30", end: "18:00", title: "Džudo · deca", loc: "Mala sala", sport: "borilacki" },
   { day: 4, start: "17:00", end: "18:30", title: "RK SC Voždovac · kadeti", loc: "Velika sala", sport: "rukomet" },

@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <a class="active" href="kontakt.html">Kontakt</a>
       </nav>
       <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
-      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" aria-label="Meni" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -47,8 +48,8 @@
       <div class="contact-card reveal">
         <div class="contact-item">
           <small>Adresa</small>
-          <strong>Crnotravska 4, 11042 Beograd</strong>
-          Banjica · Voždovac
+          <strong><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, 11042 Beograd</a></strong>
+          Sportsko-rekreativni centar „Banjica“ · Voždovac
         </div>
         <div class="contact-item">
           <small>Hala</small>
@@ -71,14 +72,15 @@
           Linije 40, 47, 48, 49, 50, 78, 80 · stajalište Paunova / Plivalište Banjica
         </div>
         <div class="map-embed">
-          <iframe title="Mapa SC Voždovac" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Crnotravska%204%20Beograd%20Banjica&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+          <iframe title="Sportsko-rekreativni centar Banjica, Crnotravska 4" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200!2d20.47515!3d44.7623439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a710036aaaaab%3A0x13bda252cdfb6eb7!2z0KHQv9C-0YDRgtGB0LrQviAtINGA0LXQutGA0LXQsNGC0LjQstC90Lgg0YbQtdC90YLQsNGAICLQkdCw0ZrQuNGG0LAi!5e0!3m2!1ssr!2srs!4v1710000000000"></iframe>
+          <a class="map-link" href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Otvori na Google mapi</a>
         </div>
       </div>
 
       <form class="form reveal" action="#" method="post">
         <h2 class="display" style="font-size:32px;">Iznajmite termin</h2>
-        <p style="color:var(--muted);margin-top:-4px;">Poruka ide na prijem. Ovo je demo forma — ne šalje serveru.</p>
+        <p style="color:var(--muted);margin-top:-4px;">Pišite na <a href="mailto:office@scvozdovac.rs">office@scvozdovac.rs</a>. Forma je demonstracija i ne šalje poruku.</p>
         <label for="ime">Ime i prezime</label>
         <input id="ime" name="ime" required placeholder="Ana Petrović" />
         <label for="email">Email</label>
@@ -109,7 +111,7 @@
           <span class="logo-mark">SC</span>
           <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
         </a>
-        <p>Crnotravska 4, 11042 Beograd</p>
+        <p><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, 11042 Beograd</a></p>
       </div>
       <div>
         <h4>Centar</h4>
@@ -129,14 +131,14 @@
       <div>
         <h4>Rad</h4>
         <ul>
-          <li>Hala 07–24h svaki dan</li>
-          <li>Otvoreni bazeni 10–19h</li>
+          <li>Hala 07-24h svaki dan</li>
+          <li>Otvoreni bazeni 10-19h</li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
       <span>© 2026 SC Voždovac</span>
-      <span>Crnotravska 4 · Banjica</span>
+      <span><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4 · Banjica</a></span>
     </div>
   </footer>
   <script src="js/raspored-data.js"></script>

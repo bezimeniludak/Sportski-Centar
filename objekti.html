@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <a href="kontakt.html">Kontakt</a>
       </nav>
       <a class="btn nav-cta" href="kontakt.html">Iznajmite termin</a>
-      <button class="nav-toggle" aria-label="Meni"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" aria-label="Meni" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -38,15 +39,23 @@
     <div class="container">
       <p class="eyebrow">Kompleks</p>
       <h1 class="display">Objekti</h1>
-      <p>Bazeni, hala, sale i teniski kompleksi na jednoj adresi — Crnotravska 4.</p>
+      <p>Bazeni, hala, sale i teniski kompleksi na jednoj adresi — <a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, Banjica</a>.</p>
     </div>
   </header>
 
   <section class="page" style="padding-top:12px;">
     <div class="container facility-list">
       <article class="facility reveal" id="bazeni">
-        <div class="facility-media">
-          <img src="images/otvoreni-1.jpg" alt="Otvoreni bazeni Banjica u zoru" />
+        <div class="facility-media shot" data-shot>
+          <div class="shot-track">
+            <button type="button" class="shot-slide is-active" data-lightbox="images/otvoreni-1.jpg"><img src="images/otvoreni-1.jpg" alt="Otvoreni bazeni Banjica u zoru" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/otvoreni-5.jpg"><img src="images/otvoreni-5.jpg" alt="Otvoreni olimpijski bazen i tribine" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/leto-2.webp"><img src="images/leto-2.webp" alt="Letnji dan na otvorenim bazenima" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/leto-3.webp"><img src="images/leto-3.webp" alt="Bazen i šuma Banjice" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/otvoreni-2.jpg"><img src="images/otvoreni-2.jpg" alt="Plato otvorenih bazena" /></button>
+          </div>
+          <button type="button" class="shot-edge shot-prev" aria-label="Prethodna fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg></span></button>
+          <button type="button" class="shot-edge shot-next" aria-label="Sledeća fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg></span></button>
         </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--plivanje)">Voda</p>
@@ -64,8 +73,15 @@
       </article>
 
       <article class="facility reverse reveal">
-        <div class="facility-media">
-          <img src="images/zatvoreni-radovi.jpg" alt="Zatvoreni olimpijski bazen tokom radova" />
+        <div class="facility-media shot" data-shot>
+          <div class="shot-track">
+            <button type="button" class="shot-slide is-active" data-lightbox="images/unutrasnji.jpg"><img src="images/unutrasnji.jpg" alt="Zatvoreni olimpijski bazen tokom rekreativnog termina" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/unutrasnji-noc.webp"><img src="images/unutrasnji-noc.webp" alt="Zatvoreni bazen noću" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/vaterpolo-2.jpg"><img src="images/vaterpolo-2.jpg" alt="Vaterpolo na zatvorenom bazenu" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/vaterpolo-1.webp"><img src="images/vaterpolo-1.webp" alt="Vaterpolo utakmica" /></button>
+          </div>
+          <button type="button" class="shot-edge shot-prev" aria-label="Prethodna fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg></span></button>
+          <button type="button" class="shot-edge shot-next" aria-label="Sledeća fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg></span></button>
         </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--vaterpolo)">Voda</p>
@@ -74,8 +90,7 @@
             za plivanje, vaterpolo i sinhrono plivanje.</p>
           <p>Termini za građanstvo: radnim danima 06–09 i 13–16, vikendom 13–16. Tokom održavanja plafona i oplate
             raspored se usklađuje nedeljno.</p>
-          <div class="note">Fotografija prikazuje fazu radova na zatvorenom bazenu. Proverite aktuelni status pre
-            dolaska.</div>
+          <div class="note">Proverite nedeljni raspored pre dolaska. Održavanje menja javne termine.</div>
           <div class="dots">
             <span class="dot-pill" style="--c:var(--vaterpolo)">Vaterpolo</span>
             <span class="dot-pill" style="--c:var(--skola)">Škola plivanja</span>
@@ -85,8 +100,15 @@
       </article>
 
       <article class="facility reveal" id="hala">
-        <div class="facility-media">
-          <img src="images/hala.webp" alt="Parket velike hale sa tribinama" />
+        <div class="facility-media shot" data-shot>
+          <div class="shot-track">
+            <button type="button" class="shot-slide is-active" data-lightbox="images/hala.webp"><img src="images/hala.webp" alt="Parket velike hale sa tribinama" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/odbojka.webp"><img src="images/odbojka.webp" alt="Odbojkaška utakmica u hali" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/odbojka-deca.webp"><img src="images/odbojka-deca.webp" alt="Dečiji odbojkaški trening" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/dzudo.webp"><img src="images/dzudo.webp" alt="Džudo takmičenje u velikoj hali" /></button>
+          </div>
+          <button type="button" class="shot-edge shot-prev" aria-label="Prethodna fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg></span></button>
+          <button type="button" class="shot-edge shot-next" aria-label="Sledeća fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg></span></button>
         </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--rukomet)">Parket</p>
@@ -103,7 +125,15 @@
       </article>
 
       <article class="facility reverse reveal" id="sale">
-        <div class="facility-media ph">Mala + trim sala</div>
+        <div class="facility-media shot" data-shot>
+          <div class="shot-track">
+            <button type="button" class="shot-slide is-active" data-lightbox="images/bzz.webp"><img src="images/bzz.webp" alt="Trening brazilskog džiudžicua na plavom tatamiju" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/stoni-tenis.webp"><img src="images/stoni-tenis.webp" alt="Stoni tenis u salonu" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/stoni-tenis-2.webp"><img src="images/stoni-tenis-2.webp" alt="Stolovi za stoni tenis" /></button>
+          </div>
+          <button type="button" class="shot-edge shot-prev" aria-label="Prethodna fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg></span></button>
+          <button type="button" class="shot-edge shot-next" aria-label="Sledeća fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg></span></button>
+        </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--borilacki)">Sale</p>
           <h3>Mala i trim sala</h3>
@@ -120,7 +150,10 @@
       </article>
 
       <article class="facility reveal" id="tenis">
-        <div class="facility-media ph">Teniski kompleksi 1–6</div>
+        <div class="facility-media court-panel">
+          <strong>6</strong>
+          <span>otvorena terena uz šumu</span>
+        </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--tenis)">Otvoreno</p>
           <h3>Tenis</h3>
@@ -134,8 +167,16 @@
       </article>
 
       <article class="facility reverse reveal" id="fitness">
-        <div class="facility-media">
-          <img src="images/otvoreni-3.jpg" alt="Platô bazena u kasno popodne" />
+        <div class="facility-media shot" data-shot>
+          <div class="shot-track">
+            <button type="button" class="shot-slide is-active" data-lightbox="images/teretana-1.jpg"><img src="images/teretana-1.jpg" alt="Teretana u sportskom centru" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/teretana-4.jpg"><img src="images/teretana-4.jpg" alt="Prijem teretane" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/teretana-2.jpg"><img src="images/teretana-2.jpg" alt="Sprave u teretani" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/welness-1.jpg"><img src="images/welness-1.jpg" alt="Finska sauna" /></button>
+            <button type="button" class="shot-slide" data-lightbox="images/welness-2.jpg"><img src="images/welness-2.jpg" alt="Wellness zona" /></button>
+          </div>
+          <button type="button" class="shot-edge shot-prev" aria-label="Prethodna fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg></span></button>
+          <button type="button" class="shot-edge shot-next" aria-label="Sledeća fotografija"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg></span></button>
         </div>
         <div class="facility-copy">
           <p class="eyebrow" style="color:var(--teretana)">Kondicija</p>
@@ -160,16 +201,17 @@
         </div>
       </div>
       <div class="gallery-grid">
-        <figure data-lightbox="images/hero-leto.jpg"><img src="images/hero-leto.jpg"
-            alt="Letnji dan na otvorenim bazenima" /></figure>
-        <figure data-lightbox="images/otvoreni-2.jpg"><img src="images/otvoreni-2.jpg"
-            alt="Olimpijski bazen i zgrada centra" /></figure>
-        <figure data-lightbox="images/otvoreni-4.jpg"><img src="images/otvoreni-4.jpg"
-            alt="Ležaljke i plavi dezeni platôa" /></figure>
-        <figure data-lightbox="images/staze.jpg"><img src="images/staze.jpg" alt="Staze zatvorenog bazena" /></figure>
-        <figure data-lightbox="images/otvoreni-5.jpg"><img src="images/otvoreni-5.jpg" alt="Tribine otvorenog bazena" />
-        </figure>
-        <figure class="ph" style="min-height:280px;">Teniski tereni</figure>
+        <figure data-lightbox="images/vaterpolo-1.webp"><img src="images/vaterpolo-1.webp"
+            alt="Vaterpolo utakmica na zatvorenom bazenu" /></figure>
+        <figure data-lightbox="images/odbojka.webp"><img src="images/odbojka.webp"
+            alt="Odbojkaška utakmica u hali" /></figure>
+        <figure data-lightbox="images/stoni-tenis.webp"><img src="images/stoni-tenis.webp"
+            alt="Stoni tenis u salonu" /></figure>
+        <figure data-lightbox="images/dzudo.webp"><img src="images/dzudo.webp"
+            alt="Džudo takmičenje u velikoj hali" /></figure>
+        <figure data-lightbox="images/welness-1.jpg"><img src="images/welness-1.jpg" alt="Finska sauna" /></figure>
+        <figure data-lightbox="images/leto-2.webp"><img src="images/leto-2.webp"
+            alt="Otvoreni bazen i šuma Banjice" /></figure>
       </div>
     </div>
   </section>
@@ -181,7 +223,7 @@
           <span class="logo-mark">SC</span>
           <span class="logo-text">Voždovac<small>Banjica · Beograd</small></span>
         </a>
-        <p>Crnotravska 4, 11042 Beograd</p>
+        <p><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4, 11042 Beograd</a></p>
       </div>
       <div>
         <h4>Centar</h4>
@@ -201,14 +243,14 @@
       <div>
         <h4>Rad</h4>
         <ul>
-          <li>Hala 07–24h</li>
+          <li>Hala 07-24h</li>
           <li>Otvoreni bazeni 10–19h</li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
       <span>© 2026 SC Voždovac</span>
-      <span>Crnotravska 4 · Banjica</span>
+      <span><a href="https://www.google.com/maps?cid=1422471533845769911&hl=sr" target="_blank" rel="noopener">Crnotravska 4 · Banjica</a></span>
     </div>
   </footer>
 
