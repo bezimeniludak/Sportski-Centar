@@ -61,7 +61,7 @@ SCB.EVENTS = [
   { day: 3, start: "08:00", end: "09:00", title: "Jutarnja sauna", loc: "Wellness", sport: "sauna" },
   { day: 3, start: "09:30", end: "11:00", title: "Škola plivanja · predškolci", loc: "Mali zatvoreni bazen", sport: "skola" },
   { day: 3, start: "10:00", end: "19:00", title: "Otvoreni bazeni (sezona)", loc: "Spoljni olimpijski bazeni", sport: "plivanje" },
-  { day: 3, start: "11:00", end: "13:00", title: "Tenis — slobodni tereni", loc: "Teniski kompleksi 1–6", sport: "tenis" },
+  { day: 3, start: "11:00", end: "13:00", title: "Tenis — slobodni tereni", loc: "Teniski kompleksi 1-6", sport: "tenis" },
   { day: 3, start: "13:00", end: "16:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 3, start: "16:00", end: "17:30", title: "Škola plivanja · školski uzrast", loc: "Zatvoreni bazen", sport: "skola" },
   { day: 3, start: "17:00", end: "18:30", title: "ORK Beograd · mlađi", loc: "Velika sala", sport: "odbojka" },
@@ -96,7 +96,7 @@ SCB.EVENTS = [
   { day: 5, start: "20:30", end: "22:00", title: "Rekreativni rukomet", loc: "Velika sala", sport: "rukomet" },
 
   { day: 6, start: "08:00", end: "22:00", title: "Otvorena teretana", loc: "Fitness sala", sport: "teretana" },
-  { day: 6, start: "09:00", end: "11:00", title: "Porodični tenis", loc: "Tereni 1–6", sport: "tenis" },
+  { day: 6, start: "09:00", end: "11:00", title: "Porodični tenis", loc: "Tereni 1-6", sport: "tenis" },
   { day: 6, start: "10:00", end: "12:00", title: "Škola sporta · subota", loc: "Mala sala", sport: "skola" },
   { day: 6, start: "10:00", end: "19:00", title: "Otvoreni bazeni (sezona)", loc: "Spoljni olimpijski bazeni", sport: "plivanje" },
   { day: 6, start: "11:00", end: "13:00", title: "Mini rukomet", loc: "Velika sala", sport: "rukomet" },
@@ -129,7 +129,7 @@ SCB.renderEventRow = function (ev, light) {
   var cls = "event-row" + (light ? " light" : "");
   return (
     '<article class="' + cls + '" style="--c:' + sport.color + '">' +
-      '<div class="event-time">' + ev.start + "–" + ev.end + "</div>" +
+      '<div class="event-time">' + ev.start + "-" + ev.end + "</div>" +
       '<div><div class="event-title">' + ev.title + '</div><div class="event-loc">' + ev.loc + "</div></div>" +
       '<span class="sport-tag">' + sport.label + "</span>" +
     "</article>"
