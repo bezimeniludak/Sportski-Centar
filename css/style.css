@@ -922,12 +922,12 @@ body > section:nth-child(5) {
   gap: 48px;
   align-items: center;
 }
-.about-copy p {
+.about p {
   color: var(--muted);
   margin-bottom: 16px;
   font-size: 17px;
 }
-body > section:nth-child(8) > div > div > div.about-copy.reveal.in > p.eyebrow {
+body > section:nth-child(8) > div > div > div.about.reveal.in > p.eyebrow {
   margin-bottom: 0px;
 }
 .stats {
@@ -1318,9 +1318,6 @@ footer li {
 .facility.reverse {
   grid-template-columns: 0.9fr 1.1fr;
 }
-.facility.reverse .facility-copy {
-  order: 2;
-}
 .facility-media {
   min-height: 280px;
   aspect-ratio: 4 / 3;
@@ -1527,9 +1524,6 @@ body.nav-open {
   .facility,
   .facility.reverse {
     grid-template-columns: 1fr;
-  }
-  .facility.reverse .facility-copy {
-    order: 0;
   }
   .hero-float {
     display: none;
