@@ -220,8 +220,7 @@
     tabs.innerHTML = order.map(function (id) {
       var d = SCB.DAYS[id];
       var isToday = id === today;
-      return '<button type="button" data-day="' + id + '" class="' + (isToday ? "active" : "") + '">' +
-        d.short + (isToday ? " · danas" : "") + "</button>";
+      return '<button type="button" data-day="' + id + '" class="' + (isToday ? "active" : "") + '">' + d.short + (isToday ? " · danas" : "") + "</button>";
     }).join("");
 
     function drawPanels() {
@@ -232,8 +231,7 @@
         var body = list.length
           ? list.map(function (ev) { return SCB.renderEventRow(ev, true); }).join("")
           : '<p class="empty-note">Nema termina za izabrani sport ovog dana.</p>';
-        return '<div class="week-panel' + (id === today ? " active" : "") + '" data-day="' + id + '">' +
-          '<div class="schedule-list">' + body + "</div></div>";
+        return '<div class="week-panel' + (id === today ? " active" : "") + '" data-day="' + id + '">' + '<div class="schedule-list">' + body + "</div></div>";
       }).join("");
     }
 
