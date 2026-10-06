@@ -348,6 +348,9 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
+.hero .eyebrow {
+  color: rgba(255, 255, 255, 0.82);
+}
 .hero h1 {
   font-size: min(14.4cqi, 18vh);
   line-height: 0.86;
@@ -548,6 +551,13 @@ section {
   border-radius: 32px;
   padding: 36px;
   position: relative;
+}
+.today-wrap .eyebrow {
+  color: #9ff6f8;
+}
+.today-wrap h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-top: 8px;
 }
 .today-top {
   display: flex;
@@ -822,6 +832,10 @@ section {
   margin-bottom: 16px;
   font-size: 17px;
 }
+.about h2 {
+  font-size: clamp(36px, 6vw, 64px);
+  margin: 10px 0;
+}
 .stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -849,6 +863,9 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+.price-grid + .section-head {
+  margin-top: 64px;
 }
 .price-card {
   background: #fff;
@@ -927,6 +944,13 @@ section {
   display: grid;
   gap: 12px;
 }
+.form h2 {
+  font-size: 32px;
+}
+.form-note {
+  color: var(--muted);
+  margin-top: -4px;
+}
 .form label {
   font-size: 13px;
   font-weight: 700;
@@ -991,6 +1015,9 @@ footer {
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
   gap: 32px;
   margin-bottom: 40px;
+}
+.footer-grid .logo {
+  margin-bottom: 16px;
 }
 footer a {
   opacity: 0.75;
@@ -1108,7 +1135,20 @@ footer li {
 }
 
 .page {
+  padding-top: 8px;
   padding-bottom: 20px;
+}
+.page.facilities {
+  padding-top: 12px;
+}
+.follow {
+  padding-top: 0;
+}
+.home-sports {
+  padding-top: 20px;
+}
+.home-tight {
+  padding-top: 12px;
 }
 
 .hero-orb {
@@ -1173,6 +1213,9 @@ footer li {
 }
 .facility.reverse {
   grid-template-columns: 0.9fr 1.1fr;
+}
+.facility.reverse .facility-media {
+  order: 2;
 }
 .facility-media {
   min-height: 280px;
@@ -1305,6 +1348,10 @@ footer li {
   overflow: hidden;
   border: 1px solid var(--line);
 }
+.hours-title {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
 .hours-table th:nth-child(1),
 .hours-table td:nth-child(1) {
   width: 46%;
@@ -1377,6 +1424,9 @@ body.nav-open {
   .facility,
   .facility.reverse {
     grid-template-columns: 1fr;
+  }
+  .facility.reverse .facility-media {
+    order: 0;
   }
   .news-grid {
     grid-template-columns: 1fr;
