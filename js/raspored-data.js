@@ -26,7 +26,6 @@ SCB.DAYS = [
   { id: 6, name: "Subota", short: "Sub" }
 ];
 
-/* Realni termini za građanstvo na zatvorenom + reprezentativni klubski i rekreativni program. */
 SCB.EVENTS = [
   { day: 1, start: "06:00", end: "09:00", title: "Rekreativno plivanje", loc: "Zatvoreni olimpijski bazen", sport: "plivanje" },
   { day: 1, start: "07:00", end: "22:00", title: "Otvorena teretana", loc: "Fitness sala", sport: "teretana" },
