@@ -1,6 +1,7 @@
 :root {
   --crna: #0c1220;
   --papir: #f3efe6;
+  --plocice: #c9e6ee;
   --bela: #fff;
   --linija: rgba(12, 18, 32, 0.1);
   --senka: 0 20px 50px rgba(12, 18, 32, 0.2);
@@ -18,7 +19,6 @@
   --borilacki: #7c3aed;
   --trim: #2dd4bf;
   --skola: #4f46e5;
-  --welness: #10b981;
   --sauna: #10b981;
   --siva: #5c6573;
 
@@ -39,7 +39,12 @@ html {
 
 body {
   font-family: "Manrope", system-ui, sans-serif;
-  background: var(--papir);
+  background-color: var(--plocice);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.9) 1px, transparent 1px);
+  background-size: 56px 128px;
+  background-attachment: fixed;
   color: var(--crna);
   line-height: 1.55;
   overflow-x: hidden;
@@ -119,7 +124,7 @@ ul {
 }
 .nav.scrolled::before,
 .nav.on-light::before {
-  background: rgba(243, 239, 230, 0.72);
+  background: rgba(201, 230, 238, 0.82);
   backdrop-filter: blur(18px);
 }
 .nav.hero-light .logo-mark,
@@ -131,6 +136,9 @@ ul {
 .nav.scrolled .logo-text,
 .nav.scrolled .nav-links a {
   color: var(--crna);
+}
+.nav.scrolled .nav-links a.active {
+  color: var(--bela);
 }
 
 .nav-inner {
@@ -164,10 +172,8 @@ ul {
 .nav.on-light .logo-mark,
 .nav.scrolled .logo-mark,
 .nav.open .logo-mark {
-  background: var(--crna);
   color: var(--bela);
 }
-
 .nav.hero-light:not(.scrolled) .logo-mark {
   background: var(--crna);
   color: var(--plivanje);
@@ -205,14 +211,15 @@ ul {
     color 0.3s;
 }
 .nav-links a:hover {
-  background: rgba(12, 18, 32, 0.06);
+  background: var(--bela);
 }
 .nav.hero-light:not(.scrolled) .nav-links a:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--bela);
+  color: var(--crna);
 }
 .nav-links a.active {
   background: var(--crna);
-  color: var(--papir) !important;
+  color: var(--bela);
 }
 
 .btn {
@@ -223,20 +230,24 @@ ul {
   padding: 13px 22px;
   border-radius: 999px;
   border: 1px solid transparent;
-  background: var(--crna);
-  color: var(--papir);
+  background: var(--bela);
+  color: var(--crna);
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
   transition:
-    transform 0.35s var(--ease),
     background 0.3s,
     color 0.3s,
-    box-shadow 0.3s;
+    border-color 0.3s;
 }
-.btn:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--senka);
+.btn:hover{
+  background: var(--crna);
+  color: var(--bela);
+}
+.btn-ghost:hover,
+.btn-cyan:hover {
+  background: var(--bela);
+  color: var(--crna);
 }
 .btn-ghost {
   background: transparent;
@@ -245,7 +256,7 @@ ul {
 }
 .btn-cyan {
   background: var(--plivanje);
-  color: var(--crna);
+  color: var(--bela);
 }
 .nav-cta {
   margin-left: 8px;
@@ -319,22 +330,6 @@ ul {
   z-index: 1;
   pointer-events: none;
 }
-.hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: radial-gradient(
-    circle at calc(var(--mx) * 100%) calc(var(--my) * 100%),
-    #000 0%,
-    transparent 62%
-  );
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.55;
-}
 .hero-content {
   position: relative;
   z-index: 3;
@@ -378,7 +373,6 @@ ul {
   gap: 12px;
 }
 .hero-meta {
-  position: static;
   display: flex;
   flex-flow: row wrap;
   gap: 8px 28px;
@@ -512,13 +506,6 @@ ul {
 }
 .page-hero {
   padding: calc(var(--nav-h) + 72px) 0 48px;
-  background:
-    radial-gradient(
-      500px 220px at 10% 0%,
-      rgba(20, 184, 200, 0.15),
-      transparent 60%
-    ),
-    var(--papir);
 }
 .page-hero h1 {
   font-size: clamp(42px, 8vw, 88px);
@@ -676,59 +663,51 @@ section {
   gap: 16px;
 }
 .sport-card {
-  background: #fff;
+  color: #fff;
   border-radius: 24px;
   padding: 22px;
-  min-height: 210px;
+  min-height: 230px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--linija);
+  justify-content: flex-end;
+  border: 0;
   position: relative;
   overflow: hidden;
-  transition:
-    transform 0.45s var(--ease),
-    box-shadow 0.45s;
+  background: #1c2433;
 }
-.sport-card::before {
+.sport-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.8s var(--ease);
+}
+.sport-card::after {
   content: "";
   position: absolute;
-  inset: auto -20% -40% auto;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: var(--c);
-  opacity: 0.14;
-  transition: transform 0.5s var(--ease);
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(12, 18, 32, 0.12) 10%, rgba(12, 18, 32, 0.78) 100%);
+  pointer-events: none;
 }
-.sport-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--senka);
+.sport-card > :not(.sport-bg) {
+  position: relative;
+  z-index: 1;
 }
-.sport-card:hover::before {
-  transform: scale(1.4);
+.sport-card:hover .sport-bg {
+  transform: scale(1.08);
 }
-.sport-ico i {
-  font-size: 22px;
-  line-height: 1;
-}
-.sport-ico {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: color-mix(in srgb, var(--c) 16%, #fff);
-  color: var(--c);
+.sport-card:hover h3 {
+  color: var(--plivanje);
 }
 .sport-card h3 {
   font-family: "Syne", sans-serif;
   font-size: 24px;
-  margin: 18px 0 6px;
-}
-.sport-card p {
-  color: var(--siva);
-  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  transition: color 0.3s;
 }
 .club-card {
   display: grid;
@@ -760,7 +739,6 @@ section {
 
 .media-split {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
   gap: 16px;
 }
 .media-card {
@@ -803,10 +781,7 @@ section {
   width: 100%;
   height: 240px;
   object-fit: cover;
-  display: block;
-  transition:
-    transform 0.8s var(--ease),
-    filter 0.5s;
+  transition: transform 0.8s var(--ease);
 }
 .gallery-grid figure:hover img {
   transform: scale(1.05);
@@ -828,7 +803,6 @@ section {
   align-items: center;
 }
 .about p {
-  color: var(--crna);
   margin-bottom: 16px;
   font-size: 17px;
 }
@@ -836,27 +810,21 @@ section {
   font-size: clamp(36px, 6vw, 64px);
   margin: 10px 0;
 }
-.stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+.about-photo {
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 420px;
+  cursor: zoom-in;
 }
-.stat {
-  background: #fff;
-  border-radius: 20px;
-  padding: 22px;
-  border: 1px solid var(--linija);
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  transition: transform 1.1s var(--ease);
 }
-.stat b {
-  font-family: "Syne", sans-serif;
-  font-size: clamp(26px, 4vw, 40px);
-  display: block;
-  letter-spacing: -0.04em;
-  overflow-wrap: anywhere;
-}
-.stat span {
-  color: var(--siva);
-  font-size: 13px;
+.about-photo:hover img {
+  transform: scale(1.06);
 }
 
 .price-grid {
@@ -1179,7 +1147,6 @@ footer li {
   transition: 0.25s var(--ease);
 }
 .filter-bar button.active {
-  background: transparent;
   color: var(--crna);
   border-color: var(--crna);
 }
@@ -1216,12 +1183,6 @@ footer li {
   object-fit: cover;
   transition: transform 1s var(--ease);
 }
-.facility:hover .facility-media img {
-  transform: scale(1.05);
-}
-.facility:hover .shot img {
-  transform: none;
-}
 .shot {
   display: grid;
   height: 100%;
@@ -1256,7 +1217,10 @@ footer li {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  transition: transform 0.8s var(--ease);
+}
+.shot-slide.is-active:hover img {
+  transform: scale(1.05);
 }
 .shot-edge {
   position: absolute;
@@ -1422,7 +1386,7 @@ body.nav-open {
     flex-direction: column;
     position: fixed;
     inset: 0 0 0 0;
-    background: var(--papir);
+    background: var(--plocice);
     padding: 100px 28px 24px;
     align-items: center;
     gap: 8px;
@@ -1431,6 +1395,9 @@ body.nav-open {
   .nav.open .nav-links a {
     font-size: 28px;
     color: var(--crna);
+  }
+  .nav.open .nav-links a.active{
+    color: var(--bela);
   }
   .nav.open .nav-toggle {
     color: var(--crna);
@@ -1576,8 +1543,7 @@ body.nav-open {
 .footer-grid > *,
 .contact-grid > *,
 .gallery-grid > *,
-.media-split > *,
-.stats > *{
+.media-split > * {
   min-width: 0;
 }
 .footer-bottom {
